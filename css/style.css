@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Raiz del documento == html*/
+:root{
+    --main-color:#ff702a;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+
+/* Raiz del documento == html*/
+*::selection{
+    background: var(--main-color);
+    color: #FFF;
+}
+
+/*Parametros del color del body y el color de texto*/
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/*Alineacion del header*/
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background: var(--bg-color);
+}
+
+/*Parametros para el logo*/
+.logo{
+
+    color:var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+}
+
+/*Separamos o alineamos los objetos del menu*/
+.navbar{
+    display: flex;
+}
+/*Aspectos para el texto del menu*/
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+/*Cambio de color cuando se pase por un objeto del menu*/
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+
+}
+
+/*
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Espaciado entre secciones*/
+section{
+    padding: 50px 17%;
+}
+
+/*Espaciado el home*/
+.home{
+    width: 100%;
+    height: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+/*Tamano de la imagen del home*/
+.home-img img{
+    max-width: 100%;
+    width: 475px;
+    height: auto;
+}
+
+/*Texto del home*/
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--main-color);
+}
+/*Texto del home*/
+.home-text h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem ;
+}
+/*Carcasa de los botones*/
+.btn{
+    display: inline-block;
+    padding:  10px 20px;
+    background: var(--main-color);
+    color: #FFF;
+    border-radius: 0.5rem;
+}
+/*Carcasa de los botones cuando se pasa por el*/
+.btn:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+/*Seccion del about*/
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 1.5rem;
+    min-height: 75vh;
+    align-items: center;
+    height: 100%;
+}
+
+.about-img img{
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.about-text span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+}
+
+.about-text p{
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+}
+
+.heading{
+    text-align: center;
+}
+.heading span{
+    color: var(--main-color);
+    font-size: 600;
+}
+.heading h2{
+    font-size: var(--h2-font);
+}
+.menu{
+    min-height: 75vh;
+}
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+/*Cajas del menu*/
+.box{
+    position: relative;
+    margin-top: 4rem;
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background: #feeee7;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.box-img{
+    width: 220px;
+    height: 220px ;
+}
+
+.box-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.box h2{
+    font-size: 1.3rem;
+    color: var(--bg-color);
+}
+.box p{
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+    text-align: center;
+}
+
+.box span{
+    font-size: var(--p-font);
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+
