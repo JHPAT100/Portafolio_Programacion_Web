@@ -169,7 +169,7 @@ section{
     font-size: var(--h2-font);
 }
 .menu{
-    min-height: 75vh;
+    max-height: 90vh;
 }
 .menu-container{
     display: grid;
@@ -220,6 +220,32 @@ section{
     color: var(--main-color);
     font-weight: 600;
 }
+
+.contact{
+    position: relative;
+    display: block;
+    margin-top: 100px;
+    max-height: 90vh;
+
+}
+
+.menu-container-contacto{
+    place-content: center;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 30px 170px;
+    background: var(--bg-color);
+   
+}
+.menu-container-contacto img{
+    width: 200px;
+    height: auto;
+}
+
 
 
 
