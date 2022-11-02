@@ -1,117 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Titulo del documento -->
-    <title>PortafolioWeb_JesusPat</title>
+    <title>Portafolio Jesus Pat ISC</title>
 
     <!-- Importacion del css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    
-    <!-- Fonts -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importacion de las fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">  
+
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo">
-            <img src="img/logo_tec.png" alt="Logo del tec">
-        </a>
-
-        <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
-
-        <!-- Lista del menu -->
-        <ul class="navbar">
-            <li> <a href="#home">Home</a></li>
-            <li> <a href="#about">About</a></li>
-            <li> <a href="#menu">Menu</a></li>
-            <li> <a href="#contact">Contact</a></li>
-            <!-- 
-            <li> <a href="#services">Services</a></li>
-            <li> <a href="#contact">Contact</a></li>
-            -->
-        </ul>
+    <header class="bg-img-fondo">
+        <div class="bg-transp">
+            <div class="contenedor">
+                <div class="nav-logo-menu">
+                    <div class="nav-logo">
+                        <a href="#" class="logo">
+                            <img src="/assets/img/logo_tec.png" alt="Logo del tec">
+                        </a>
+                    </div>
+                    <div class="nav-menu">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </header>
 
-    <!---- Home Start ---->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h1>Estudio Ghibli</h1>
-            <h2>Mis top Animes <br> mas vistos de la franquicia</h2>
-            <a href="https://studioghibli.fandom.com/es/wiki/Studio_Ghibli" class="btn">Ver mas...</a>
-        </div>
+    <main class="contendor principal">
 
-        <div class="home-img">
-            <img src="img/totoro_logo_circulo.png" alt="Imagen referencial">
-        </div>
-    </section>
-
-    <!--- About Start--->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/totoro.png" alt="Imagen referencial">
-        </div>
-
-        <div class="about-text">
-            <span>About Estudio Ghibli</span>
-            <h2>Studio Ghibli <br> (スタジオジブリ Sutajio Jiburi?)</h2>
-            <p>Es estudio japonés de animación, considerado por la 
-                crítica especializada y muchos cinéfilos como uno 
-                de los mejores estudios de animación del mundo en la actualidad,a día de hoy, 
-                han realizado más de 20 películas, además de otras clases de trabajos (cortometrajes, anuncios publicitarios, ...).</p>
-            <a href="https://studioghibli.fandom.com/es/wiki/Studio_Ghibli" class="btn">Ver mas...</a>
-        </div>
-    </section>
-
-    <!------ Menu Start ------>
-    <section class="menu" id="menu">
-
-        <div class="heading">
-            <span>Peliculas</span>
-            <h2>Las mas vistas</h2>
-        </div>
-
-        <div class="menu-container">
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/monoke-removebg-preview (1).png" alt="Imagen de hamburguesa">
-                </div>
-                <h2>La princesa Mononoke</h2>
-                <p>Ambientada en un Japón del período Muromachi, se centra en la lucha entre los guardianes sobrenaturales de un bosque y los 
-                    humanos que profanan sus recursos, visto por el forastero Ashitaka</p>
-
-                <!--<i class="bx bx-cart-alt"></i>-->
+        <!---- Home Start ---->
+        <section class="home">
+            <div class="principal-title">
+                <h1>Portafolio básico con HTML y CSS – Lorem Portfolio</h1>
+                <hr/>
             </div>
+        </section>
 
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/logo_totoro.png" alt="Imagen de hamburguesa">
-                </div>
-                <h2>Mi vecino Totoro</h2>
-                <p>Película de animación japonesa cuenta la historia de una familia y sus interacciones con un espíritu del 
-                    bosque al que llaman «Totoro», en un Japón de la posguerra</p>
-                <!--<i class="bx bx-cart-alt"></i>-->
-            </div>
 
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/Castle.png" alt="Imagen de hamburguesa">
+        <section class="contendor secundario">
+            <!--- Start--->
+            <section class="start" id="start">
+                <div>
+                    <img src="/assets/img/img_plantilla.jpg" alt="">
+                </div>          
+            </section>
+            <hr/>
+            <!---Introduccion--->
+            <section class="introduccion">
+                <div>
+                    <p>Este es un portafolio basico hecho con HTML y CSS,
+                        El portafolio siguiente muestra de manera detallada
+                        los enlaces del proyecto, direcciones de contacto y descripciones de
+                        las tecnologías utilizadas para el mismo, todo para la materia de Programacion Web </p>
                 </div>
-                <h2>El increible castillo vagabundo</h2>
-                <p>Sophie es una joven sombrerera 
-                    que es víctima del hechizo de una bruja y que decide ir al castillo ambulante, 
-                    lugar habitado por el mago Howl, para ver si puede encontrar una solución al maleficio</p>
-                <!--<i class="bx bx-cart-alt"></i>-->
-            </div>
-        </div>
-    </section>
+            </section>
+            
+            <!---- Proceso ---->
+            <section class="proceso" id="proceso">
+                <h2>Proceso</h2>
+                <section class="proceso-content">
+                    <div class="proceso-img">
+                        <img src="/assets/img/Diagrama_Web.png" alt="Imagen referencial">
+                    </div>
+                    <div class="proceso-text">
+                        <span>Acerca de la metodología</span>
+                        <h3>Desarrollo</h3>
+                        La metodología de desarrollo elegida fue la 
+                        entrega continua lean puesto que permitía tener un 
+                        control visual de las fases en que se desarrollaba 
+                        la página web además de la actualización o 
+                        implementación de los cambios en el software además de ayudarnos 
+                        con UML para el diseño del funcionamiento del sistema</p>
+            
+                    </div>
+                </section>
+            </section>
+
+            <!--- Tecnologias--->
+            <section class="tecnologias" id="tecnologias">
+                <div class="about-text">
+                    <h2>Tecnologias usadas</h2>
+                    <ul>
+                        <li>Marcado semántico HTML5</li>
+                        <li>Configuración de propiedades en CSS</li>
+                        <li>Flexbox</li>
+                        <li>Visual estudio code</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--- Enlaces--->
+            <section class="enlaces" id="enlaces">  
+                <div class="about-text">
+                    <h2>Enlaces</h2>
+                    <ul>
+                        <li>URL del portafolio <a href="https://github.com/JHPAT100/Portafolio_Programacion_Web">Github</a></li>
+                        <li>URL del modelado <a href="https://lucid.app/lucidchart/e2d8023d-5abe-4500-82f5-fe08e244095c/edit?viewport_loc=-992%2C-283%2C4477%2C2083%2C0_0&invitationId=inv_be3bca8b-1f45-4fa3-914e-b11665e1e803 ">Modelado</a></li>
+                    </ul>
+                </div>
+            </section>
+    </main>
 
     <!------ Contacto ------>
 
@@ -121,23 +124,24 @@
         </div>
 
         <div class="menu-container-contacto">
-            <div class="box2">
-                <a href="https://www.facebook.com/gaming/JhGamesLatam"><img src="img/facebook_480px.png" alt="Logo Facebook"></a>
+            <div class="box">
+                <a href="https://www.facebook.com/gaming/JhGamesLatam"><img src="/assets/img/facebook_480px.png" alt="Logo Facebook"></a>
             </div>
 
-            <div class="box2">
-                <a href="https://github.com/JHPAT100/Portafolio_Programacion_Web"><img src="img/github_squared_400px.png" alt="Logo GitHub"></a>
+            <div class="box">
+                <a href="https://github.com/JHPAT100/Portafolio_Programacion_Web"><img src="/assets/img/github_squared_400px.png" alt="Logo GitHub"></a>
             </div>
 
-            <div class="box2">
-                <a href="https://www.instagram.com/jesus.haziel.pat/"><img src="img/instagram_480px.png" alt="Logo Instagram"></a>
+            <div class="box">
+                <a href="https://www.instagram.com/jesus.haziel.pat/"><img src="/assets/img/instagram_480px.png" alt="Logo Instagram"></a>
             </div>
         </div>
 
         <p>&copf;2022 Jesus Haziel Pat Pech</p>
     </footer>
-    
+
 
     
 </body>
+
 </html>
